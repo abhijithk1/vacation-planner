@@ -9,5 +9,5 @@ _`npm` and `go` should be installed_
 To run the application locally :
 - clone the repository
 - clone the backend repository [vacation-planner-backend](https://github.com/abhijithk1/vacation-planner-backend)
-- Run the bc\ackend application : `go run .`
-- Run the React application `npm run dev`
+- Run the backend application in the terminal using the command : `go run .`
+- Run the React application in a new terminal using the command : `npm run dev`
