@@ -7,8 +7,11 @@ import { addDays } from "date-fns";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { submitVacation } from "./service";
+import { useNavigate } from "react-router-dom";
 
 const Calender = () => {
+  const navigate = useNavigate();
+
   const [state, setState] = useState([
     {
       startDate: new Date(),
@@ -33,6 +36,7 @@ const Calender = () => {
     console.log("state: ", state);
     const response = await submitVacation(title, descp, state[0].startDate, state[0].endDate);
     console.log("response : ", response);
+    navigate("/dashboard")
   };
 
   return (
